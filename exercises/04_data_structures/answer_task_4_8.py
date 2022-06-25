@@ -24,12 +24,12 @@
 Это не значит, что задание сделано правильно, просто на данном этапе сложно иначе
 проверять результат.
 """
-
 ip = "192.168.3.1"
 
-octets = ip.split('.')
-oct1, oct2, oct3, oct4 = int(octets[0]), int(octets[1]), int(octets[2]), int(octets[3])
+octets = ip.split(".")
 
-print(f'''
-{oct1:<8}  {oct2:<8}  {oct3:<8}  {oct4:<8}
-{oct1:08b}  {oct2:08b}  {oct3:08b}  {oct4:08b}''')
+output = """
+{0:<10}{1:<10}{2:<10}{3:<10}
+{0:08b}  {1:08b}  {2:08b}  {3:08b}"""
+
+print(output.format(int(octets[0]), int(octets[1]), int(octets[2]), int(octets[3])))

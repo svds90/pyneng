@@ -16,3 +16,7 @@
 """
 
 mac = "AAAA:BBBB:CCCC"
+
+octets = mac.split(':')
+
+print(f"{bin(int(octets[0], 16))[2:]}{bin(int(octets[1], 16))[2:]}{bin(int(octets[2], 16))[2:]}")
