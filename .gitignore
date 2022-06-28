@@ -36,3 +36,7 @@ Thumbs.db
 
 # Virual environments
 venv/
+
+# Pyneng system files
+build/
+pyneng.egg-info/
