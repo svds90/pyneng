@@ -51,9 +51,8 @@ london_co = {
     },
 }
 
-param_template = 'Введите имя параметра ({}): '
-device = input('Введите имя устройства: ')
-param_list = ', '.join(list(london_co[device]))
-param = input(param_template.format(param_list))
+device = input("Введите имя устройства: ")
+params = ", ".join(london_co[device].keys())
+parameter = input(f"Введите имя параметра ({params}): ")
 
-print(london_co[device][param])
+print(london_co[device][parameter])
